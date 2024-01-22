@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang=en-US>
+
+<head>
+<style>
+  :root {
+    --light: #e5e5d1;
+    --dark: #0f0f0f;
+    --yellow: #e99c7e; #c78b5c;
+    --red: #ef7220; #923935;
+    --blue: #6961ae; #457196;
+    
+    --fade-height: 1em;
+  }
+  
+  html {
+    background: var(--red);
+    color: var(--dark);
+    font-size: x-large;
+    font-family: Helvetica;
+    box-sizing: border-box;
+    overscroll-behavior-y: none;
+  }
+  
+  body {
+    background: var(--light);
+    margin: auto;
+    max-width: 50em;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  
+  h1 {
+    margin-top: 0.5em;
+    //text-shadow: 4px 4px 0px lightgray;
+  }
+  
+  h2 {
+    margin-bottom: 0.5em;
+    //text-shadow: 4px 4px 0px lightgray;
+  }
+  
+  .header {
+    background: var(--light);
+    margin: 0em 1em;
+    position: sticky;
+    top: 0;
+  }
+  
+  .header:after {
+    background: linear-gradient(var(--light) 0%, transparent 100%);
+    content: '';
+    width: 100%;
+    height: var(--fade-height);
+    position: absolute;
+    border-top: solid 2px var(--blue);
+  }
+  
+  .menu:before {
+    background: linear-gradient(transparent 0%, var(--light) 80%);
+    content: '';
+    width: 100%;
+    height: var(--fade-height);
+    position: absolute;
+    top: calc(0px - var(--fade-height));
+  }
+  
+  .content {
+    background: var(--light);
+    max-width: 35em;
+    align-self: center;
+    
+    padding: 1em;
+    margin: 0em;
+    
+    text-indent: 1em;
+    line-height: 1.4em;
+    text-align: justify;
+  }
+  
+  .content > p:first-of-type {
+    margin-top: 0px;
+  }
+  
+  .content > p:last-of-type {
+    margin-bottom: 0px;
+  }
+  
+  .menu {
+    background: var(--light);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-items: stretch;
+    
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .menu > a {
+    display: block;
+  }
+  
+  .menu_item {
+    background: var(--red);
+    
+    font-variant: small-caps;
+    color: var(--dark);
+    overflow: hidden;
+    text-decoration-line: none;
+    
+    padding: 0.25em;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1em;
+    text-align: center;
+    
+    border-radius: 0.25em 0.25em 0 0;
+    
+    text-overflow: ellipsis;
+  }
+  
+  .menu_item:hover {
+    background: var(--blue);
+    color: var(--light);
+  }
+    
+  #menu_toggle, #menu_toggle_label {
+    display: none;
+  }
+  
+  @media (max-width: 40em), (max-height: 40em) {
+    html {
+      font-size: large;
+    }
+        
+    .header {
+      position: initial;
+      margin: 0 0.5em;
+    }
+    
+    h1, h2 {
+      margin: 0.25em 0;
+    }
+    
+    .header::after {
+      display: none;
+    }
+    
+    .content {
+      margin: 0;
+      padding: 0.5em;
+      hyphens: auto;
+    }
+    
+    .menu {
+      gap: 0.1em;
+      flex-direction: column;
+      padding: 0;
+    }
+    
+    .menu > a {
+      display: none;
+    }
+    
+    .menu_item {
+      overflow: hidden;
+      flex-basis: 1.5em;
+      border-radius: 0;
+    }
+    
+    #menu_toggle:checked ~ a {
+      display: block;
+    }
+    
+    #menu_toggle_label {
+      display: block;
+      overflow: hidden;
+      flex-basis: 1.5em;
+    }
+  }
+  
+</style>
+  <title>The Matrilineal Nature of Bronze Age Cretan Society</title>
+  <link rel="icon" type="image/png" href="./icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="header">
+    <h1>The Matrilineal Nature of Bronze Age Cretan Society</h1>
+    <h2>Gloria y'Edynak, 2024</h2>
+  </div>
+  <article class="content">
+    <p>Over 15 years ago there were tantalizing hints by field archaeologists that Bronze Age Crete might have been a matrilineal society. A matrilineal society is one in which land and status is inherited from the founding ancestress through the female line. The archaeologists based this suggestion on the study of house structure and its features. None of these archaeological works described what a matrilineal society is or how it functions. I decided to research published ethnographies and analytical works on matrilineal societies to determine if there were cormmon practices that might explain some patterns of archaeological finds in Bronze Age Crete.
+    <p>In thinking about the website, I realized that the "matrilineal framework" which is presented in the manuscript may be generally applicable to early farming/horticultural societies anywhere. The earliest farming cultures were essentially based on stick and hoe gardening. Women primarily did this work. (Only in a few contemporary, matrilineal societies where it is considered dangerous for women to work in fields due to negative relations with neighboring <span class="errata">tribes</span>, men do the gardening.) In other contemporary, complex, economically productive horticultural societies, a lower caste or slaves perform this work. What is <span class="errata">fairly</span> clear is that a matrilineal social organization rarely is found in pastoral, plow or <span class="errata">irigation</span> agricultural societies. These societies tend to be patrilineal where inheritance and status passes through the male line.
+    <p>My work began in earnest in 2019 through the end of <span class="errata">2023</span>. The website edition was created in 2024 thanks to Isaac Morgan. This is an unpublished manuscript. It has not been edited. Please excuse mistypings. Download or print the documents. Share them. Please use these ideas. Debate them, apply them to old and new data, test them on the archaeology of <span class="errata">early</span> farming/horticultural societies. Please cite this website. I did my PhD work at Harvard and most of my prehistoric anthropology research in the Balkans.
+    <p>Gloria y'Edynak, 2024
+  </article>
+  <nav class="menu">
+    <input type="checkbox" title="Menu" id="menu_toggle">
+    <a href="" title="Table of Contents" class="menu_item">Table of Contents</a>
+    <a href="" title="Manuscript" class="menu_item">Manuscript</a>
+    <a href="" title="Foot Notes" class="menu_item">Foot Notes</a>
+    <a href="" title="Figures" class="menu_item">Figures</a>
+    <a href="" title="Biblio" class="menu_item">Biblio</a>
+    <a href="" title="Curriculum Vitae" class="menu_item">C.V.</a>
+    <label for="menu_toggle" id="menu_toggle_label" class="menu_item">Menu</label>
+  </nav>
+</body>
+
+</html>
