@@ -16,7 +16,7 @@
   html {
     background: var(--red);
     color: var(--dark);
-    font-size: x-large;
+    font-size: large;
     font-family: Helvetica;
     box-sizing: border-box;
     overscroll-behavior-y: none;
@@ -26,6 +26,7 @@
     background: var(--light);
     margin: auto;
     max-width: 50em;
+    min-height: 100vh;
     
     display: flex;
     flex-wrap: nowrap;
@@ -33,12 +34,14 @@
   }
   
   h1 {
-    margin-top: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0em;
     //text-shadow: 4px 4px 0px lightgray;
   }
   
   h2 {
-    margin-bottom: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
     //text-shadow: 4px 4px 0px lightgray;
   }
   
@@ -73,6 +76,7 @@
     align-self: center;
     
     padding: 1em;
+    padding-bottom: 4em;
     margin: 0em;
     
     text-indent: 1em;
@@ -90,6 +94,15 @@
   
   .menu {
     background: var(--light);
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 48em;
+    
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -98,9 +111,6 @@
     padding-left: 1em;
     padding-right: 1em;
     align-items: stretch;
-    
-    position: sticky;
-    bottom: 0;
   }
   
   .menu > a {
@@ -121,7 +131,7 @@
     flex-basis: 1em;
     text-align: center;
     
-    border-radius: 0.25em 0.25em 0 0;
+    border-radius: 0.5em 0.5em 0 0;
     
     text-overflow: ellipsis;
   }
@@ -156,6 +166,7 @@
     .content {
       margin: 0;
       padding: 0.5em;
+      padding-bottom: 4em;
       hyphens: auto;
     }
     
